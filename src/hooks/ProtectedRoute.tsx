@@ -1,7 +1,7 @@
-import { Children, type JSX } from "react"
+import { type JSX } from "react"
 import { Navigate } from "react-router"
 
-const protectedRoutes = ({children}: {children: JSX.Element}) => {
+const protectedRoutes = ({Children}: {Children: JSX.Element}) => {
     const token = localStorage.getItem('token')
     const isLoggedIn = !!token 
 
@@ -10,7 +10,7 @@ const protectedRoutes = ({children}: {children: JSX.Element}) => {
         return <Navigate to={"/"} />
     }
 
-    return children
+    return Children
 
 }
 

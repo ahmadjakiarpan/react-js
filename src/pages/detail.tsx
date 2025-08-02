@@ -1,9 +1,12 @@
-import { useState } from "react"
-import { useNavigate } from "react-router"
+import Navbar from "../components/Navbar";
 
-const Login = () => {
-    const [email, setEmail] = useState<string>("")
-    const [password, setPassword] = useState<string>("")
-
-    
+const Detail = () => {
+    return (
+        <>
+        <Navbar />
+        <p> Ini halaman detail</p>
+        </>
+    )
 }
+
+export default Detail
