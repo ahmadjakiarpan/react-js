@@ -3,7 +3,7 @@ interface CardProps {
     productName: string,
     currentPrice: number,
     image: string,
-    originalPrice: string,
+    originalPrice: number,
     savings: string,
 }
 
